@@ -1,3 +1,3 @@
-import * as functions from './modules/functions.js';
+import * as utils from './modules/utils.js';
 
-functions.isWebp();
+utils.isWebp();
