@@ -1,0 +1,14 @@
+.main-title {
+  font-family: 'Oswald', 'Roboto', Arial, Helvetica, sans-serif;
+  padding: 0;
+  @include fontStyle;
+  font-size: 54px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: $lightGreenColor;
+  max-width: 475px;
+  width: 100%;
+  margin: 100px 0 0 110px;
+  grid-area: title;
+  cursor: default;
+}

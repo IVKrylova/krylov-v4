@@ -1,3 +1,44 @@
 .header {
+  background-color: $lightPurpleColor;
+  width: 100%;
+  max-width: 1280px;
+  display: grid;
+  grid-template-areas:
+    'button-list button-list'
+    'title img'
+    'about-me img'
+    'about-me img';
 
+  &__button-list {
+    margin: 60px 75px 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    column-gap: 30px;
+    grid-area: button-list;
+  }
+
+  &__img {
+    margin: 90px 125px 40px 49px;
+    max-width: 464px;
+    width: 100%;
+    grid-area: img;
+    position: relative;
+  }
+
+  &__photo {
+    display: block;
+  }
+
+  &__star {
+    position: absolute;
+    background-image: url(../../../img/star.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 9px;
+    left: -8px;
+    width: 132px;
+    height: 132px;
+    transform: rotate(28deg);
+  }
 }

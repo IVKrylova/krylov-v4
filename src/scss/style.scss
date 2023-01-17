@@ -1,6 +1,11 @@
 @import './normalize';
 @import './fonts';
+@import './utils/_constants';
+@import './utils/_mixins';
 
 @import './blocks/page/page';
 
 @import './blocks/header/header';
+@import './blocks/button/button';
+@import './blocks/main-title/main-title';
+@import './blocks/about-me/about-me';
