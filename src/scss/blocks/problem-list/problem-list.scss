@@ -1,0 +1,10 @@
+.problem-list {
+  padding: 0 0 85px;
+  list-style-type: none;
+  margin: 85px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  column-gap: 60px;
+  row-gap: 50px;
+}
