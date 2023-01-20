@@ -29,16 +29,4 @@
   &__photo {
     display: block;
   }
-
-  &__star {
-    position: absolute;
-    background-image: url(../../../img/star.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: 9px;
-    left: -8px;
-    width: 132px;
-    height: 132px;
-    transform: rotate(28deg);
-  }
 }

@@ -1,0 +1,22 @@
+.star {
+  position: absolute;
+  background-image: url(../../../img/star.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &_position_header {
+    top: 9px;
+    left: -8px;
+    width: 132px;
+    height: 132px;
+    transform: rotate(28deg);
+  }
+
+  &_position_contacts {
+    top: 40%;
+    right: 19%;
+    width: 100px;
+    height: 100px;
+
+  }
+}
