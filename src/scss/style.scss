@@ -3,7 +3,10 @@
 @import './utils/_constants';
 @import './utils/_mixins';
 
+@import '../../node_modules/swiper/swiper.scss';
+
 @import './blocks/page/page';
+@import './blocks/content/content';
 
 @import './blocks/header/header';
 @import './blocks/button/button';
@@ -17,3 +20,12 @@
 @import './blocks/problem/problem';
 @import './blocks/problem/__img/problem__img';
 @import './blocks/problem/__title/problem__title';
+
+@import './blocks/education/education';
+@import './blocks/swiper/swiper';
+@import './blocks/education/__list/education__list';
+@import './blocks/education/__diploma/education__diploma';
+@import './blocks/slider/slider';
+@import './blocks/slider/__button/slider__button';
+@import './blocks/slider/__button/_next/slider__button_next';
+@import './blocks/slider/__button/_prev/slider__button_prev';

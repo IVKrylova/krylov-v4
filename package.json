@@ -2,7 +2,8 @@
   "dependencies": {
     "del": "^7.0.0",
     "gulp-cli": "^2.3.0",
-    "gulp-rename": "^2.0.0"
+    "gulp-rename": "^2.0.0",
+    "swiper": "^8.4.6"
   },
   "name": "test-task",
   "version": "1.0.0",

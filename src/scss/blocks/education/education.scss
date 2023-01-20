@@ -1,0 +1,7 @@
+.education {
+  background-color: $lightGreenColor;
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
