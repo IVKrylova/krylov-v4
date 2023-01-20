@@ -1,0 +1,37 @@
+.footer {
+  background-color: $darkPurpureColor;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0 30px 20px;
+  color: $lightGreenColor;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+
+  &__title {
+    font-weight: 400;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.15;
+    margin: 20px 0 0;
+  }
+
+  &__copyright {
+    padding: 0;
+    margin: 5px 0 0;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  &__license {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 5px 0 0;
+    padding: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $darkGreenColor;
+  }
+}

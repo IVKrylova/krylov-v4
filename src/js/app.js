@@ -11,6 +11,7 @@ import {
   diplomaClass,
   diplomaTemplateId,
   diplomaListClass,
+  copyrightClass,
 } from './modules/constants.js';
 
 utils.isWebp();
@@ -65,3 +66,8 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+/* footer */
+const copyright = document.querySelector(copyrightClass);
+
+copyright.innerHTML = `&copy;${new Date().getFullYear()} Все права защищены`;

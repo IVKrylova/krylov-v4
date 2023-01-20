@@ -8,3 +8,5 @@ export const diplomaClass = '.education__item';
 export const diplomaTemplateId = '#diploma-template';
 export const diplomaListClass = '.education__list';
 export const diplomaImgClass = '.education__diploma';
+
+export const copyrightClass = '.footer__copyright';
