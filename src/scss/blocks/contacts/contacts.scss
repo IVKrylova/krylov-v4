@@ -16,17 +16,15 @@
     grid-template-rows: repeat(4, 1fr);
     font-size: 24px;
     line-height: 1.17;
-    color: $lightGreenColor;
     row-gap: 30px;
-  }
-
-  &__item {
-    display: flex;
-    column-gap: 12px;
   }
 
   &__item:first-child {
     justify-self: end;
+
+    &:hover .contacts__icon {
+      @include trambling(1s);
+    }
   }
 
   &__item:nth-child(2n) {
@@ -38,14 +36,38 @@
   &__item:nth-child(3n) {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
+
+    & .contacts__icon {
+      transition: 1s;
+    }
+
+    &:hover .contacts__icon {
+      transform: scale(1.2);
+    }
   }
 
   &__item:nth-child(4n) {
     grid-column: 4 / 5;
     grid-row: 4 / 5;
+
+    & .contacts__icon {
+      transition: 1s;
+    }
+
+    &:hover .contacts__icon {
+      transform: translateY(10%);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    column-gap: 12px;
+    color: $lightGreenColor;
   }
 
   &__icon {
+    display: block;
     object-fit: contain;
   }
 

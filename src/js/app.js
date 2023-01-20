@@ -12,6 +12,8 @@ import {
   diplomaTemplateId,
   diplomaListClass,
   copyrightClass,
+  contactsIconEmailClass,
+  contactsLinkEmailClass,
 } from './modules/constants.js';
 
 utils.isWebp();
@@ -65,6 +67,17 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
+
+/* contacts */
+const contactsIconEmail = document.querySelector(contactsIconEmailClass);
+const contactsLinkEmail = document.querySelector(contactsLinkEmailClass);
+
+contactsLinkEmail.addEventListener('mouseover', () => {
+  contactsIconEmail.src = './img/icon-open-email.png';
+});
+contactsLinkEmail.addEventListener('mouseout', () => {
+  contactsIconEmail.src = './img/icon-email.png';
 });
 
 /* footer */

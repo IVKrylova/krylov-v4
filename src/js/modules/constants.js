@@ -9,4 +9,7 @@ export const diplomaTemplateId = '#diploma-template';
 export const diplomaListClass = '.education__list';
 export const diplomaImgClass = '.education__diploma';
 
+export const contactsLinkEmailClass = '.contacts__link_email';
+export const contactsIconEmailClass = '.contacts__icon_email';
+
 export const copyrightClass = '.footer__copyright';
