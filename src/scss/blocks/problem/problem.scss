@@ -2,4 +2,16 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+
+  &__img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 25px 0 0;
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }

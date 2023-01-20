@@ -5,4 +5,16 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+
+  &__list {
+    padding: 0;
+    margin: 10px 0 0;
+    list-style-type: none;
+  }
+
+  &__diploma {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
 }

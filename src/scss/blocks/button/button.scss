@@ -15,4 +15,9 @@
   &:hover {
     opacity: .8;
   }
+
+  &_color_purple {
+    color: $lightPurpleColor;
+    background-image: url(../../../../img/border-button-purple.png);
+  }
 }

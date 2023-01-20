@@ -6,4 +6,23 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+
+  &__buttons {
+    padding: 0;
+    list-style-type: none;
+    margin: 50px auto;
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__type {
+    font-size: 30px;
+    line-height: 1.17;
+    padding: 0;
+    list-style-type: none;
+    margin: 40px auto 0;
+    display: grid;
+    row-gap: 25px;
+    text-align: center;
+  }
 }
