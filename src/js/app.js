@@ -2,7 +2,7 @@ import * as utils from './modules/utils.js';
 import Card from './components/Card.js';
 import Section from './components/Section.js';
 import Diploma from './components/Diploma.js';
-import  Swiper, { Navigation } from 'swiper';
+import  Swiper, { Navigation, Autoplay } from 'swiper';
 import { problems, diplomas } from './modules/data.js';
 import {
   cardClass,
@@ -56,11 +56,14 @@ createSectionDiplomas(diplomas);
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  modules: [ Navigation ],
+  modules: [ Navigation, Autoplay ],
   loop: true,
   slidesPerView: 1,
   spaceBetween: 20,
-  autoplay: true,
+  autoplay: {
+    delay: 2000,
+  },
+  speed: 1000,
 
   // Navigation arrows
   navigation: {
