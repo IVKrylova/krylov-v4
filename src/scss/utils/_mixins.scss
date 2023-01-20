@@ -1,4 +1,38 @@
+/* styles */
 @mixin fontStyle {
   font-style: normal;
   font-weight: 400;
+}
+
+/* animations */
+@mixin rotationRight($duration) {
+  @keyframes rotationRight {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  animation-name: rotationRight;
+  animation-duration: $duration;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@mixin rotationLeft($duration) {
+  @keyframes rotationLeft {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  animation-name: rotationLeft;
+  animation-duration: $duration;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }

@@ -3,19 +3,19 @@
   background-image: url(../../../img/star.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  width: 100px;
+  height: 100px;
 
   &_position_header {
-    top: 9px;
+    top: 47px;
     left: -8px;
-    width: 132px;
-    height: 132px;
-    transform: rotate(28deg);
+    transform: rotate(24deg);
+    @include rotationRight(15s);
   }
 
   &_position_contacts {
     top: 40%;
     right: 19%;
-    width: 100px;
-    height: 100px;
+    @include rotationLeft(15s);
   }
 }
