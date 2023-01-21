@@ -13,3 +13,6 @@ export const contactsLinkEmailClass = '.contacts__link_email';
 export const contactsIconEmailClass = '.contacts__icon_email';
 
 export const copyrightClass = '.footer__copyright';
+
+export const popupWithImgId = '#popup-img';
+export const popupImgClass = '.popup__image';

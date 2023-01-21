@@ -2,6 +2,7 @@ import * as utils from './modules/utils.js';
 import Card from './components/Card.js';
 import Section from './components/Section.js';
 import Diploma from './components/Diploma.js';
+import PopupWithImage from './components/PopupWhithImg.js';
 import  Swiper, { Navigation, Autoplay } from 'swiper';
 import { problems, diplomas } from './modules/data.js';
 import {
@@ -14,6 +15,7 @@ import {
   copyrightClass,
   contactsIconEmailClass,
   contactsLinkEmailClass,
+  popupWithImgId,
 } from './modules/constants.js';
 
 utils.isWebp();
@@ -41,7 +43,11 @@ const createSectionDiplomas = data => {
   const diplomasList = new Section({
     items: data,
     renderer: item => {
-      const diploma = new Diploma(item, diplomaClass, diplomaTemplateId);
+      const handleDiplomaClick = _ => {
+        popupImage.open(item);
+      }
+
+      const diploma = new Diploma(item, diplomaClass, diplomaTemplateId, handleDiplomaClick);
 
       return diploma.generateElementDiploma();
     }
@@ -87,3 +93,8 @@ contactsLinkEmail.addEventListener('mouseout', () => {
 const copyright = document.querySelector(copyrightClass);
 
 copyright.innerHTML = `&copy;${new Date().getFullYear()} Все права защищены`;
+
+
+/* popup with img */
+const popupImage = new PopupWithImage(popupWithImgId);
+popupImage.setEventListeners();
