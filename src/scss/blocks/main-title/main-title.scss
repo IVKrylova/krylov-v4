@@ -6,10 +6,36 @@
   line-height: 1.2;
   letter-spacing: 0.05em;
   color: $lightGreenColor;
-  max-width: 475px;
+  max-width: 390px;
   width: 100%;
-  margin: 100px 0 0 110px;
+  margin: 100px 0 0 10%;
   grid-area: title;
   cursor: default;
-  font-weight: 400;
+
+  @include media_960 {
+    font-size: 48px;
+    max-width: 340px;
+  }
+
+  @include media_820 {
+    font-size: 40px;
+    max-width: 300px;
+  }
+
+  @include media_700 {
+    max-width: 450px;
+    text-align: center;
+    margin: 55px 0 0;
+    justify-self: center;
+  }
+
+  @include media_590 {
+    font-size: 38px;
+  }
+
+  @include media_480 {
+    font-size: 34px;
+    max-width: 240px;
+    margin-top: 30px;
+  }
 }

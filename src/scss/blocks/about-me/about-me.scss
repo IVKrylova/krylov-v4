@@ -1,12 +1,26 @@
 .about-me {
   @include fontStyle;
-  padding: 0;
-  margin: 45px 0 0 110px;
-  list-style-type: none;
+  @include resetUl;
+  margin: 45px 0 0 10%;
   font-size: 20px;
   line-height: 1.17;
   color: $lightGreenColor;
   display: grid;
   row-gap: 10px;
   cursor: default;
+
+  @include media_960 {
+    font-size: 16px;
+  }
+
+  @include media_820 {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  @include media_700 {
+    justify-self: center;
+    margin: 20px 5%;
+    text-align: center;
+  }
 }

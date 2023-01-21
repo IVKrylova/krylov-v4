@@ -13,6 +13,13 @@
   padding: 0;
   background-size: contain;
 
+  @include media_960 {
+    width: 20px;
+    height: 20px;
+    top: -25px;
+    right: -25px;
+  }
+
   &:hover {
     cursor: pointer;
     opacity: .6;

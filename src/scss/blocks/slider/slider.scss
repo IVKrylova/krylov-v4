@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom: 60px;
 
+  @include media_960 {
+    margin-bottom: 40px;
+  }
+
   &__button {
     position: absolute;
     top: 45%;
@@ -21,10 +25,18 @@
     &_prev {
       left: -50px;
       transform: rotate(180deg);
+
+      @include media_820 {
+        left: -30px;
+      }
     }
 
     &_next {
       right: -50px;
+
+      @include media_820 {
+        right: -30px;
+      }
     }
   }
 }

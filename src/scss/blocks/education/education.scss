@@ -6,10 +6,14 @@
   grid-template-columns: 1fr;
   justify-items: center;
 
+  @include media_700 {
+    grid-column: 1 / 2;
+    background-color: $darkGreenColor;
+  }
+
   &__list {
-    padding: 0;
+    @include resetUl;
     margin: 10px 0 0;
-    list-style-type: none;
   }
 
   &__diploma {
@@ -17,5 +21,15 @@
     height: 300px;
     object-fit: contain;
     cursor: pointer;
+
+    @include media_820 {
+      width: 250px;
+      height: 250px;
+    }
+
+    @include media_390 {
+      width: 200px;
+      height: 200px;
+    }
   }
 }

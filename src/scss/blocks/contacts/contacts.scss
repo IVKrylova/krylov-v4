@@ -7,16 +7,48 @@
   grid-template-columns: 1fr;
   justify-content: center;
 
+  @include media_700 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+  }
+
   &__list {
-    padding: 0;
+    @include resetUl;
     margin: 80px 0;
-    list-style-type: none;
     display: grid;
     grid-template-columns: 20% 15% 15% 15% 35%;
     grid-template-rows: repeat(4, 1fr);
     font-size: 24px;
     line-height: 1.17;
     row-gap: 30px;
+
+    @include media_1080 {
+      grid-template-columns: 25% 15% 15% 15% 30%;
+    }
+
+    @include media_960 {
+      grid-template-columns: repeat(4, 1fr);
+      font-size: 22px;
+    }
+
+    @include media_820 {
+      font-size: 18px;
+      margin: 60px 0;
+    }
+
+    @include media_700 {
+      font-size: 16px;
+    }
+
+    @include media_590 {
+      grid-template-columns: 1fr;
+      margin-left: 5%;
+    }
+
+    @include media_390 {
+      justify-items: center;
+      margin: 30px auto;
+    }
   }
 
   &__item:first-child {
@@ -25,12 +57,29 @@
     &:hover .contacts__icon {
       @include trambling(1s);
     }
+
+    @include media_590 {
+      justify-self: start;
+    }
+
+    @include media_390 {
+      justify-self: center;
+    }
   }
 
   &__item:nth-child(2n) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     margin-left: -30px;
+
+    @include media_590 {
+      grid-column: 1 / 2;
+      margin-left: 40px;
+    }
+
+    @include media_390 {
+      margin-left: 0;
+    }
   }
 
   &__item:nth-child(3n) {
@@ -43,6 +92,15 @@
 
     &:hover .contacts__icon {
       transform: scale(1.2);
+    }
+
+    @include media_590 {
+      grid-column: 1 / 2;
+      margin-left: 80px;
+    }
+
+    @include media_390 {
+      margin-left: 0;
     }
   }
 
@@ -57,6 +115,15 @@
     &:hover .contacts__icon {
       transform: translateY(10%);
     }
+
+    @include media_590 {
+      grid-column: 1 / 2;
+      margin-left: 120px;
+    }
+
+    @include media_390 {
+      margin-left: 0;
+    }
   }
 
   &__link {
@@ -64,11 +131,19 @@
     display: flex;
     column-gap: 12px;
     color: $lightGreenColor;
+
+    @include media_820 {
+      column-gap: 8px;
+    }
   }
 
   &__icon {
     display: block;
     object-fit: contain;
+
+    @include media_820 {
+      width: 20px;
+    }
   }
 
   &__contact {

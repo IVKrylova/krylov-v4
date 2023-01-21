@@ -1,6 +1,6 @@
 .problem-list {
-  padding: 0 0 85px;
-  list-style-type: none;
+  @include resetUl;
+  padding-bottom: 85px;
   margin: 85px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -8,4 +8,32 @@
   column-gap: 60px;
   row-gap: 50px;
   box-sizing: border-box;
+
+  @include media_960 {
+    margin-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @include media_820 {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    row-gap: 40px;
+    column-gap: 25px;
+  }
+
+  @include media_700 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    padding: 0 60px 50px;
+  }
+
+  @include media_480 {
+    column-gap: 20px;
+    padding: 0 10px 50px;
+  }
+
+  @include media_390 {
+    grid-template-columns: 1fr;
+    padding: 0 52px 50px;
+  }
 }

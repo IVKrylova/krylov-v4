@@ -7,7 +7,16 @@
   color: $lightPurpleColor;
   box-sizing: border-box;
   cursor: default;
-  font-weight: 400;
+  @include fontStyle;
+
+  @include media_960 {
+    font-size: 34px;
+  }
+
+  @include media_820 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
 }
 
 .section-title_color_green {

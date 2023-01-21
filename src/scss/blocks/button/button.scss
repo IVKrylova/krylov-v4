@@ -1,7 +1,7 @@
 .button {
   background-color: transparent;
   color: $lightGreenColor;
-  padding: 10px 25px;
+  padding: 10px 15px;
   background-image: url(../../../img/border-button-green.png);
   border: none;
   cursor: pointer;
@@ -13,6 +13,16 @@
   line-height: 1.2;
   box-sizing: border-box;
   text-decoration: none;
+
+  @include media_960 {
+    font-size: 14px;
+  }
+
+  @include media_820 {
+    font-size: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 
   &:hover {
     opacity: .8;

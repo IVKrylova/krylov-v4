@@ -6,6 +6,11 @@
   &__img {
     width: 80px;
     height: 80px;
+
+    @include media_820 {
+      width: 70px;
+      height: 70px;
+    }
   }
 
   &__title {
@@ -14,5 +19,15 @@
     font-size: 20px;
     line-height: 1.17;
     cursor: default;
+    text-align: center;
+    @include fontStyle;
+
+    @include media_960 {
+      font-size: 18px;
+    }
+
+    @include media_820 {
+      font-size: 16px;
+    }
   }
 }

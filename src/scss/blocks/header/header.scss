@@ -9,24 +9,61 @@
     'about-me img'
     'about-me img';
 
+    @include media_700 {
+      grid-template-areas:
+        'button-list'
+        'title'
+        'img'
+        'about-me';
+    }
+
   &__button-list {
-    margin: 30px 75px 0 auto;
-    padding: 0;
-    list-style-type: none;
+    margin: 30px 4% 0 auto;
+    @include resetUl;
     display: flex;
     column-gap: 30px;
     grid-area: button-list;
+
+    @include media_590 {
+      justify-self: center;
+      margin: 30px auto 0;
+    }
+
+    @include media_480 {
+      flex-direction: column;
+      margin-top: 20px;
+      row-gap: 20px;
+    }
   }
 
   &__img {
-    margin: 90px 125px 40px 49px;
+    margin: 90px 5% 40px auto;
     max-width: 464px;
     width: 100%;
     grid-area: img;
     position: relative;
+
+    @include media_960 {
+      max-width: 400px;
+    }
+
+    @include media_820 {
+      max-width: 300px;
+    }
+
+    @include media_700 {
+      justify-self: center;
+      margin: 50px auto 0;
+    }
+
+    @include media_480 {
+      width: 250px;
+      margin-top: 30px;
+    }
   }
 
   &__photo {
     display: block;
+    width: 100%;
   }
 }
