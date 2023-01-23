@@ -1,4 +1,5 @@
 import * as utils from './modules/utils.js';
+import Cookies from 'js-cookie';
 import Card from './components/Card.js';
 import Section from './components/Section.js';
 import Diploma from './components/Diploma.js';
@@ -98,3 +99,7 @@ copyright.innerHTML = `&copy;${new Date().getFullYear()} Все права за�
 /* popup with img */
 const popupImage = new PopupWithImage(popupWithImgId);
 popupImage.setEventListeners();
+
+/* cookies */
+/* ToDo cookies notification */
+
