@@ -8,6 +8,7 @@
   color: $darkGreenColor;
   grid-template-columns: 9fr 1fr;
   column-gap: 20px;
+  font-size: 16px;
 
   &__text {
     padding: 0;
@@ -24,9 +25,22 @@
     &:hover {
       background-color: $darkGreenColor;
     }
+
+    @include media_700 {
+      margin-top: 10px;
+      width: 100px;
+      padding: 5px;
+      justify-self: center;
+    }
   }
 
   &_opened {
     display: grid;
+  }
+
+  @include media_700 {
+    grid-template-columns: 1fr;
+    font-size: 12px;
+    margin: 0 5% 10px 5%;
   }
 }
