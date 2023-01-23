@@ -17,6 +17,9 @@ import {
   contactsIconEmailClass,
   contactsLinkEmailClass,
   popupWithImgId,
+  COOKIES_NAME,
+  cookiesClass,
+  cookiesButtonClass,
 } from './modules/constants.js';
 
 utils.isWebp();
@@ -101,5 +104,19 @@ const popupImage = new PopupWithImage(popupWithImgId);
 popupImage.setEventListeners();
 
 /* cookies */
-/* ToDo cookies notification */
+const cookies = document.querySelector(cookiesClass);
+const cookiesButton = document.querySelector(cookiesButtonClass);
+
+if (Cookies.get(COOKIES_NAME) === 'true') {
+  cookies.classList.remove('cookies_opened');
+} else {
+  cookies.classList.add('cookies_opened');
+}
+
+cookiesButton.addEventListener('click', () => {
+  Cookies.set(COOKIES_NAME, true, {
+    expires: 7,
+  });
+  cookies.classList.remove('cookies_opened');
+});
 

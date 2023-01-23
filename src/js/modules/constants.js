@@ -16,3 +16,8 @@ export const copyrightClass = '.footer__copyright';
 
 export const popupWithImgId = '#popup-img';
 export const popupImgClass = '.popup__image';
+
+export const COOKIES_NAME = 'visit';
+
+export const cookiesClass = '.cookies';
+export const cookiesButtonClass = '.cookies__button';
